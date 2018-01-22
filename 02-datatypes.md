@@ -83,3 +83,6 @@ print (false == false) --False is indeed equal to true! Returns true.
 print (false ~= true) --False does not match true, comparison succeeds. True.
 ```
 
+
+
+http://lua-users.org/wiki/LuaTypesTutorial
