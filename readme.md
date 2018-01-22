@@ -1,4 +1,4 @@
-#Shitty Lua Help
+# Shitty Lua Help
 
 This is basically me trying to note down my progress of learning the programming language Lua myself, whilst failing at it miserably.
 
