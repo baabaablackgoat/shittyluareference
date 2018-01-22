@@ -22,7 +22,7 @@ Just keep the basic rules in your head that we'll establish later, and it will u
 ### Numbers
 You know what a number is, don't you? Well, take exactly the concept you already know from your math classes and apply it here.
 
-In Lua, a number can be literally any number\* (\*some restrictions apply) you want it to be. It doesn't matter if this is a decimal value (commonly caled float in other languages) or not (usually called an integer), if it's positive or negative. All numbers are always considered a floating point value.
+In Lua, **a number can be literally any number**\* (\*some restrictions apply) you want it to be. It doesn't matter if this is a decimal value (commonly called float in other languages) or not (usually called an integer), if it's positive or negative. All numbers are always considered a floating point value.
 
 This allows for easy arithmetics with numbers in Lua. The classic operands like +, -, *, and / all apply, but there's some more neat stuff that are all integrated into Lua. We'll probably learn more about that later.
 
@@ -33,3 +33,28 @@ another_one = -3.1415
 can_i_join = no you idiot --this won't work.
 ```
 
+### Strings
+No, we're not talking about actual threads of yarn. Instead, a string in programming is **any length of text or characters**, including numbers.
+
+Wait, what? Yes, numbers can also be strings. However, using mathematics on this type of data won't be just as easy. You'll need to make it into a number first.
+
+You can also join two or more strings together, making a potentially SUPER LARGE STRING!!!! No, but seriously, adding two strings is like adding two sentences. Values inside the strings won't be added together like usual. See below for an example.
+
+To make a variable a string, it needs to be encased in double or single quotes. If you use apostrophes - single quotes - in your string, you really wanna use double quotes, or you'll have to do escaping. And that's annoying.
+
+```lua
+a_string = "Hello, world!"
+another_string = "foo"
+yet_another_one = 'bar'
+print (another_string .. yet_another_one) --returns "foobar". The two dots join the strings together. + won't work here.
+number_juan = "1"
+number_too = "2"
+print (number_juan .. number_too) --returns "12", NOT 3
+bad_string = 'they're'        ' --see how the color changed? Ignore that last quote on the far right, that one is just for formatting.
+this_works = 'they\'re' --Using \ escapes troublesome characters.
+```
+
+### Boolean
+Deal or no deal? Seal. 
+
+This one is self explanatory. Booleans come in the very varied flavours true and `false`.
