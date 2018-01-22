@@ -23,7 +23,9 @@ This doesn't necessairly mean that Assembly is always faster and therefore bette
 
 Let's get you started with some actual Lua code. Try looking at the following statements and see if you understand what they could mean. 
 
-`print ("Hello")`
+```
+print ("Hello")
+```
 This one's straightforward. It `print`s out the word Hello, which we will refer to as String (a datatype we'll learn more about later) from now on, to the output it's bound to - usually, the console window. 
 
 ```
@@ -37,4 +39,4 @@ The second statement will `print` out the result of 42 multiplied by 5 - so 210.
 Not so hard, right?
 
 ## Okay, I want to have """FUN""". Ha. Where do I try this out?
-Chances are you found out about Lua using ComputerCraft or OpenComputers, both minecraft mods. Well, then congratulations, you got alot to experiment with. If you want to stick to "normal" usage, use the [live demo](https://www.lua.org/demo.html) on the Lua Homepage or install it to your machine.
+Chances are you found out about Lua using ComputerCraft or OpenComputers, both minecraft mods. Well, then congratulations, you got alot to experiment with. If you want to stick to "normal" usage, use the [live demo](https://www.lua.org/demo.html) on the Lua Homepage or [install it to your machine.](https://www.lua.org/download.html)

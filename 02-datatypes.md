@@ -20,3 +20,16 @@ And this is how we achieve the same thing with lua: `str = "foo"`
 Just keep the basic rules in your head that we'll establish later, and it will understand what you want from it.
 
 ### Numbers
+You know what a number is, don't you? Well, take exactly the concept you already know from your math classes and apply it here.
+
+In Lua, a number can be literally any number\* (\*some restrictions apply) you want it to be. It doesn't matter if this is a decimal value (commonly caled float in other languages) or not (usually called an integer), if it's positive or negative. All numbers are always considered a floating point value.
+
+This allows for easy arithmetics with numbers in Lua. The classic operands like +, -, *, and / all apply, but there's some more neat stuff that are all integrated into Lua. We'll probably learn more about that later.
+
+```lua
+a_number = 420
+another_number = 69.1337
+another_one = -3.1415
+can_i_join = no you idiot --this won't work.
+```
+
