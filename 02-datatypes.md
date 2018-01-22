@@ -54,7 +54,32 @@ bad_string = 'they're'        ' --see how the color changed? Ignore that last qu
 this_works = 'they\'re' --Using \ escapes troublesome characters.
 ```
 
-### Boolean
+### Footnote: Numbers and Strings
+
+Strings and numbers can be, if applicable, converted into one another using only one line each: `tonumber()` turns a string, if possible, to a number, and `tostring()` does the exact opposite.
+
+```lua
+stringy = "3"
+county = 5
+print(stringy+county) --This will return an error - datatypes don't match!
+print(tonumber(stringy)+county) --8
+print(stringy+tostring(county)) --"35"
+tonumber("nah") --Obviously, this won't work.
+```
+
+### Boolean and matching comparison
 Deal or no deal? Seal. 
 
-This one is self explanatory. Booleans come in the very varied flavours true and `false`.
+This one is self explanatory. Booleans come in the very varied flavours `true` and `false`. Basically an easier way of saying 0 or 1.
+
+To work with these operators, we need to learn about `==` and `~=`. These translate to "is equal to" and "is NOT equal to".
+
+It is important that you use two equals signs. Single equals sign means assigning a variable, and double equals sign means comparing it to another. Got it?
+
+```lua
+print(false) --obviously returns false.
+print (false == true) --False is not equal to true, the comparison fails. Returns false.
+print (false == false) --False is indeed equal to true! Returns true.
+print (false ~= true) --False does not match true, comparison succeeds. True.
+```
+
