@@ -1,8 +1,13 @@
 # TL;DR
 For the lazy fucks or a recap.
 
+## For programmers:
+Warning, Arrays (tables) are 1-INDEXED.
+
+Did I mention: NO SEMICOLONS.
+
 ## Basics
-**coming soon**
+
 
 ## Datatypes
 - Number - any numerical value, always a float
