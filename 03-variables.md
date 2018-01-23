@@ -1,6 +1,13 @@
 # Variables
 Whatever you need your variables for, usually, they're meant to store data, and to keep it accessible for later.
 
+##TL;DR
+Multiple variables can be assigned using the comma inbetween each key-value pair `a,b=1,2`
+
+Variables are evaluated before they are assigned. All assignments in one line occur at once, NOT left-to-right. 
+
+Unassigned variables automatically are assigned `nil`.
+
 ## Assigning variables
 On the previous pages, you've seen me assigning several variables by themselves, all alone, usually something like this:
 
@@ -28,6 +35,15 @@ And if you enter too many values, they are simply discarded.
 ```lua
 a,b = "value_a", "value_b", "value_c"
 print(a,b) --returns "value_a    value_b"
+```
+
+Values that evaluate to something will be evaluated first and then stored in the variable.
+```lua
+res = 6+9
+print(res) --15
+concat = "foo".."bar"
+print(concat) --foobar
+
 ```
 
 It is important to note that **all assignments in one statement occur at once.** Using this, you can for example easily swap variables:
