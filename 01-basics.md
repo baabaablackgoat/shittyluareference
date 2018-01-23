@@ -40,3 +40,5 @@ Not so hard, right?
 
 ## Okay, I want to have """FUN""". Ha. Where do I try this out?
 Chances are you found out about Lua using ComputerCraft or OpenComputers, both minecraft mods. Well, then congratulations, you got alot to experiment with. If you want to stick to "normal" usage, use the [live demo](https://www.lua.org/demo.html) on the Lua Homepage or [install it to your machine.](https://www.lua.org/download.html)
+
+Windows: here's a guide to build Lua on your machine. http://lua-users.org/wiki/BuildingLuaInWindowsForNewbies

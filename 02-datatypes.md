@@ -82,7 +82,23 @@ print (false == true) --False is not equal to true, the comparison fails. Return
 print (false == false) --False is indeed equal to true! Returns true.
 print (false ~= true) --False does not match true, comparison succeeds. True.
 ```
+### Tables
+Come closer, come here, and watch as amazing things shall appear!
 
+...I can't rhyme for shit.
+
+Long story short, Tables are an **aggregate data container.** This means that multiple values can exist in them at once. Opposed to other languages like for example Javascript, not only do these containers support Arrays - values seperated by a comma, but the same syntax is also used for Objects with key-value pairs!
+
+Tables are created by enclosing the values in curly brackets, and seperating each element with a comma.
+
+Also, yes, nesting tables is a thing.
+
+```lua
+three = 3
+im_a_table = {"input 1", 2, three} --You can use as many types at once as you wish, as long as you know how to handle this properly later on.
+nesting = {"some value",{"i'm nested, look at me!", "woah!", "amazing!"}, "foo"} --Multiple dimensionssssssssssssssssssss
+key_value_pairs = {im_a_key = "I'm the value", ["another_key"] = "with yet another value"} --both syntaxes work
+```
 
 
 http://lua-users.org/wiki/LuaTypesTutorial
