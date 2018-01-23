@@ -1,7 +1,7 @@
 # Variables
 Whatever you need your variables for, usually, they're meant to store data, and to keep it accessible for later.
 
-##TL;DR
+## TL;DR
 Multiple variables can be assigned using the comma inbetween each key-value pair `a,b=1,2`
 
 Variables are evaluated before they are assigned. All assignments in one line occur at once, NOT left-to-right. 
