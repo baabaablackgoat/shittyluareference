@@ -123,4 +123,16 @@ end
 printme("whatever") --will print out "whatever" it is given in the brackets
 ```
 
+### nil
+First and foremost: nil is NOT zero. Instead, nil is the closest thing you can get to absolute nothingness.
+
+Basically, nil means that there's nothing here. Not even a data type.
+
+You can usually use this to check if something has recieved input or not.
+
+```lua
+print(nil == 0) --false!
+print(i_was_never_declared == nil) --true - this variable wasn't declared.
+```
+
 http://lua-users.org/wiki/LuaTypesTutorial
