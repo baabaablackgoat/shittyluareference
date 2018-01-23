@@ -17,5 +17,5 @@ Assigned using `=` operand. Multiple vars can be assigned by seperating the key-
 
 Statements are evaluated before assignment. Assignment in one statement occurs all at once, not Left-to-right.
 
-Undefined variables are `nil.`
+Undefined variables are `nil`.
 

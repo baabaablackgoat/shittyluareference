@@ -60,8 +60,10 @@ Strings and numbers can be, if applicable, converted into one another using only
 
 ```lua
 stringy = "3"
+actualstring="fuck"
 county = 5
-print(stringy+county) --This will return an error - datatypes don't match!
+print(stringy+county) --8 - this will actually work. Learn more about coercion in 04-math
+print(actualstring+county) --error - datatypes don't match, and fuck can't be made into a number!
 print(tonumber(stringy)+county) --8
 print(stringy+tostring(county)) --"35"
 tonumber("nah") --Obviously, this won't work.
