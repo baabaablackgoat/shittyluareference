@@ -100,5 +100,27 @@ nesting = {"some value",{"i'm nested, look at me!", "woah!", "amazing!"}, "foo"}
 key_value_pairs = {im_a_key = "I'm the value", ["another_key"] = "with yet another value"} --both syntaxes work
 ```
 
+### Functions
+If you ever need to run a bit of code over and over and over again and don't want to copypaste it all over the place, then worry not!
+Functions are here to save your butt.
+
+Functions in Lua are assigned to a variable, and can then be run by "calling" this variable. Think of it like a parcel that you can drop anywhere you like, with the added feature that you can give the parcel a label it can do stuff with - input variables.
+Make sure you indent your code, and don't forget the end keyword to close your function
+
+TL;DR: Snippet of code that sometimes gets input from somewhere else and then runs.
+
+Also, beware of recursion. You'll learn about this eventually for sure. 
+
+```lua
+memeception = function()
+    print ("ayylmao")
+end
+memeception() --This calls the function and will print out "ayylmao"
+
+printme = function(input)
+    print (input)
+end
+printme("whatever") --will print out "whatever" it is given in the brackets
+```
 
 http://lua-users.org/wiki/LuaTypesTutorial
