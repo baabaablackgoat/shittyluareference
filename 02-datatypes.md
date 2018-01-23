@@ -135,4 +135,16 @@ print(nil == 0) --false!
 print(i_was_never_declared == nil) --true - this variable wasn't declared.
 ```
 
+### Footnote: Checking the datatype
+It is very easy to find out what datatype a variable is. Lua has it's own function for this: `type()`.
+
+```lua
+str = "42"
+num = 42
+table = {"foo","bar","bez"}
+print(type(str)) --will print "string"
+print(type(num)) --will prin "number"
+
+```
+
 http://lua-users.org/wiki/LuaTypesTutorial
