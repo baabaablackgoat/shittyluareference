@@ -6,7 +6,7 @@
 - Table - an aggregate datatype. Supports having multiple values in itself at once, like Arrays. {"Wrap em","in curly","brackets."} 
 - Functions - does stuff you want it to do. Make them by delcaring a variable and set that to a `function()`.
 - nil - literally nothing. The absence of data. NOT ZERO! Other languages call this NULL/null. 
-- Comments - Single line comments start with `--`. Multiline comments start with `[[` and end with `]]`. Escape character is `\\`.
+- Comments - Single line comments start with `--`. Multiline comments start with `--[[` and end with `]]`. Escape character is `\`.
 
 ## The long (huehue) version
 ### Hold up fam!
