@@ -153,8 +153,6 @@ print(type(num)) --will print "number"
 
 ```
 
-http://lua-users.org/wiki/LuaTypesTutorial
-
 ### Comments and Escaping
 Because your code can easily become convoluted, most programming languages have a comment function to make the interpreter completely ignore any content of them.
 
