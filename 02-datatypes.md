@@ -6,6 +6,7 @@
 - Table - an aggregate datatype. Supports having multiple values in itself at once, like Arrays. {"Wrap em","in curly","brackets."} 
 - Functions - does stuff you want it to do. Make them by delcaring a variable and set that to a `function()`.
 - nil - literally nothing. The absence of data. NOT ZERO! Other languages call this NULL/null. 
+- Comments - Single line comments start with `--`. Multiline comments start with `[[` and end with `]]`. Escape character is `\\`.
 
 ## The long (huehue) version
 ### Hold up fam!
@@ -24,7 +25,9 @@ You know what a number is, don't you? Well, take exactly the concept you already
 
 In Lua, **a number can be literally any number**\* (\*some restrictions apply) you want it to be. It doesn't matter if this is a decimal value (commonly called float in other languages) or not (usually called an integer), if it's positive or negative. All numbers are always considered a floating point value.
 
-This allows for easy arithmetics with numbers in Lua. The classic operands like +, -, *, and / all apply, but there's some more neat stuff that are all integrated into Lua. We'll probably learn more about that later.
+This allows for easy arithmetics with numbers in Lua. The classic operands like +, -, *, and / all apply, but there's some more neat stuff that are all integrated into Lua. These start with `math.`, and there is about 20 of them. Explaining them all would take too long, so refer to the reference for them.
+
+https://www.lua.org/manual/5.3/
 
 ```lua
 a_number = 420
@@ -146,8 +149,33 @@ str = "42"
 num = 42
 table = {"foo","bar","bez"}
 print(type(str)) --will print "string"
-print(type(num)) --will prin "number"
+print(type(num)) --will print "number"
 
 ```
 
 http://lua-users.org/wiki/LuaTypesTutorial
+
+### Comments and Escaping
+Because your code can easily become convoluted, most programming languages have a comment function to make the interpreter completely ignore any content of them.
+
+In Lua, as soon as you enter `--`, any following characters until the end of the line will be ignored - a single-line comment.
+
+Alternatively, you can start comments with `--[[`. These will go on forever until you close them with `]]` - allowing multi-line comments.
+
+```lua
+print("foo")
+--print("bar")       This line will be ignored.
+print("bez") --hello i'm a comment      Comments can start mid-line.
+--[[ print("Hello ") ]] print("world!")  
+```
+
+But what if you actually need to use these special characters for something else? Well, for that, you can use escaping characters.
+Using escaping characters negates the effect of the next character that follows them, allowing for example quotes to appear in a string.
+
+The character in question is the backslash: `\`
+
+```lua
+escaped_string = "Adam says: \"Fuck you!\"" --Like this, I can use double quotes in a double-quoted string!
+this_wont_comment = "--[[ hello!" --Do note that comments don't need to be escaped within strings.
+this_is_bad = "And then I said: "Well, fuck you too!"" --See how the color changed? This will make Lua trip up.
+```
