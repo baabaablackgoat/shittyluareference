@@ -30,7 +30,8 @@ This allows for easy arithmetics with numbers in Lua. The classic operands like 
 a_number = 420
 another_number = 69.1337
 another_one = -3.1415
-can_i_join = no you idiot --this won't work.
+print(a_number + "69") --489 - Lua will attempt to convert any given strings into numbers. This is called Coercion. Avoid it though.
+print(another_number + "an actual string") --error, datatype mismatch!
 ```
 
 ### Strings
@@ -62,7 +63,7 @@ Strings and numbers can be, if applicable, converted into one another using only
 stringy = "3"
 actualstring="fuck"
 county = 5
-print(stringy+county) --8 - this will actually work. Learn more about coercion in 04-math
+print(stringy+county) --8 - As mentioned before, this works thanks to "coercion."
 print(actualstring+county) --error - datatypes don't match, and fuck can't be made into a number!
 print(tonumber(stringy)+county) --8
 print(stringy+tostring(county)) --"35"
