@@ -51,8 +51,29 @@ An example Ternary in **JavaScript, NOT Lua**:
 ### While
 If you want to run some code until some other condition is met, you'll love the while loop.
 
-It will repeat it's code over and over until the condition you give to it returns true.
+It will repeat it's code over and over as long as the condition you give to it returns true. If it's false, the loop "breaks".
 
 ```lua
-
+i = 2
+while i < 100 do
+    i = i^2
+end
 ```
+
+The example above would continue to square the variable `i` until the result is greater or equal to 100, breaking the while loop.
+
+### Repeat
+Sometimes, you want some loop to end if a statement suddenly turns true. You can either use the `not` keyword, or the repeat loop.
+
+It will repeat its contents over and over until the statement given at the end returns true, breaking the loop.
+
+```lua
+i = 2
+repeat
+    i = i^2
+until i >= 100
+``` 
+This example will do the same as the while example - Squaring i until it reaches 100 or more.
+
+### for
+**soon:tm:**
