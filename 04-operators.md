@@ -48,5 +48,24 @@ big = 420
 print(small < big) --true
 print(small > big) --false
 print("aaa" < "abc") --true
-print("remove kebab") --remove kebab   Just remove it already from the premises
+print("remove kebab") --remove kebab   Just remove it from the premises already 
 ```
+
+Now for the logical operators. There are three flavours of these: `and`, `or`, and `not`.
+
+`not` will invert the result you get, turning a true into a false and vice versa.
+
+`and` requires both the first statement and the following statement to be true so that itself can output true.
+
+`or` only requires one of the statements to be true, but doesn't mind if both were, either.
+
+```lua
+print(not true) --false, duh.
+
+print(true and true) --true
+print(true and false) --false
+
+print(false or false) --false
+print(false or true) --true
+print(not true or true) --you can mix and match this stuff, try not to confuse yourself with not though.
+``` 
