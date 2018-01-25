@@ -108,7 +108,7 @@ Now the `else`. If none of the previous checks have succeded, you can make your 
 
 The keyword `end` closes the if statement, and the second `end` closes the function.
 
-Something you should know: Other languages have something reffered to as **Ternaries.** This is basically a shorthand version of an if-else statement that you want to keep compact. **Lua does not have this.**
+Something you should know: Other languages have something reffered to as **Ternaries.** This is basically a shorthand version of an if-else statement that you want to keep compact. **Lua does not have this.** Yes, you can bodge your own one, but just... don't. It's confusing as hell.
 
 An example Ternary in **JavaScript, NOT Lua**:
 ```js
