@@ -1,5 +1,4 @@
-# Operators and Ternarys
-
+# Operators and conditional code
 ## TL;DR
 
 - Arithmetics: `+`, `-`, `*`, `/`, `%`(Modulo), `^` (x to the power of y), 
