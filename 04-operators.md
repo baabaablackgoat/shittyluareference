@@ -8,9 +8,9 @@
 - If/elseif/else: `if x then y elseif y then z else aaa end`
 
 ## if Niko\_is\_bowling == false then go\_bowling()  
-Sometimes, you want code to only run under certain circumstances. We use Operators and Ternaries for these.
+Sometimes, you want code to only run under certain circumstances. We use Operators and conditional structure for these.
 
-Operators are anything **comparing two values**, whilst ternaries are the structure that check if a statement you give to it is true and then select if or which code should be run.
+Operators are anything comparing two values, whilst conditional code only runs if it's condition is fulfilled - usually checked with those operators.
 
 ### Operators
 Every operator will compare the value to it's left to the value on it's right.
@@ -70,10 +70,10 @@ print(false or true) --true
 print(not true or true) --you can mix and match this stuff, try not to confuse yourself with not though.
 ``` 
 
-### Ternaries
+### Conditional code
 Here comes the juicy part. Suppose you only want to run a bit of code if some value is smaller or greater than some other value, and some other code should run if blah is blah blah blah blah. You get the idea.
 
-The most commonly known one is the **if/elseif/else** ternary.
+The most commonly known one is the **if/elseif/else** statement.
 
 *An if/elseif/else ternary always needs an if statement, but elseif and else are completely optional.*
 
@@ -107,3 +107,10 @@ The `elseif` statement then checks if the input is "awp". I think you get the id
 Now the `else`. If none of the previous checks have succeded, you can make your code use this statement.
 
 The keyword `end` closes the if statement, and the second `end` closes the function.
+
+Something you should know: Other languages have something reffered to as **Ternaries.** This is basically a shorthand version of an if-else statement that you want to keep compact. **Lua does not have this.**
+
+An example Ternary in **JavaScript, NOT Lua**:
+```js
+    return(condition ? true : false);
+```
