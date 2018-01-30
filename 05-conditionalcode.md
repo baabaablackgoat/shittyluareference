@@ -76,4 +76,82 @@ until i >= 100
 This example will do the same as the while example - Squaring i until it reaches 100 or more.
 
 ### for
-**soon:tm:**
+For can be used in two cases: A numeric loop, and an iteration loop. Let's talk about the numeric loop first.
+
+__Numeric for__
+
+A numeric for statement is, just like while and repeat, a loop statement. However, this one loops itself for a set amount of time, because you give it a variable with some rules to work with.
+
+The variable you give the for statement gets up to three properties. The first property is mandatory and is the variable name with a starting number value. The second property is your limit, and is mandatory too. As soon as the variable declared in the first variable is **greater than this value**, the for loop will exit. The third property is not always needed, and defines by how much the variable will increment with each iteration of the code.
+
+Basically, every time the code in the for loop has finished executing, the program will jump back to the start, and increment the variable you gave it according to the other properties you passed to it.
+
+In general, keep this in mind: **Start, Stop, Step.** Step can be neglected and will then be assumed as +1 / iteration.
+```lua
+for i = 1,5 do--You don't need the step bit, it's then assumed as 1
+    print(i) --prints out 1,2,3,4,5.
+end 
+
+for i = 0,100,5 do--Starts with i=0, adds 5 with each iteration, stops at >100.
+    print(i) --will print out 0,5,10,...100
+end
+```
+Side note: Usually, programmers use the variable i to iterate with for loops and counting steps. You don't have to do this yourself, the variable name can be anything.
+
+__Iterating for__
+
+As soon as we get more used to tables, this might come in handy. Using for combined with an iterable object (so, basically, a table) will run the code on every element of the table, one by one. This is really useful for key/value pairs.
+
+Creating an iterable for statement requires the keyword `in`. Take a look at the example below, I think it explains it way better than any words could.
+
+```lua
+hey_im_a_table = {"foo","bar","bez"}
+for key,value in ipairs(hey_im_a_table) do --key is the "position" in the table. Programmers call this the index.
+    print(value)
+end
+--We'll talk about ipairs() later. For now, just know that it basically adds an index to the table.
+```
+
+Side note: Something you should know about Lua, which makes me really angry. All other sensible programming languages use 0-indexing. This basically means that the first element is the element 0 considering code logic, and the 2nd is element 1, etc... **Lua completely ignores this programming standard and starts counting from 1, like in everyday use.**
+
+Sure, you might say that this is a good thing, but if you get used to programming, keep in mind that Lua tries way too hard to be hipster.
+
+### We're done here: `break`
+
+Sometimes, you want to get out of a loop early if some condition has met. In Lua, we use break for this.
+
+`break` will, once Lua gets to "read" this bit of code, instantly stop the loop, and continue with the code below itself.
+
+The following isn't exactly the nicest code, but it gets the point across:
+```lua
+for i=1,1000 do
+    if i >= 100 then break end --The loop will forcibly close when i is greater or equal to 100.
+    print(i) --would usually print out 1-1000, but instead prints out 1-99.
+end
+```
+
+### You have activated my skip card: Lua's hacky `continue`
+
+Lua likes to ignore programming standards, as we already established. This is probably why Lua doesn't have a `continue` statement like many other languages. 
+
+In Lua, instead, we use goto statements.
+
+A goto statement consists of two bits. The goto itself and the target line the code is supposed to jump to once the goto runs.
+Target lines are defined by writing a word inbetween pairs of doubledots. So, basically this: ``::hello::``, and jumppads are defined by writing goto followed with the name of the target line. So, jumping to our target up there would look like this: `goto hello`
+
+Using this knowledge, we can simulate a continue - skipping the current iteration of a loop.
+We just put the jump target at the bottom of the loop.
+
+```lua
+while true do --hue hue, infinite loop
+    if some_condition then goto continue end
+    --lots of code you usually want to run
+    --even more code
+    --wait i don't want to run, skip :b:ls
+    ::continue::
+end
+```
+
+### Hacky ternaries
+
+Because this shitty workaround some page is trying to advertise to me is confusing as fuck, I won't try to explain it just yet. Maybe i'll update this page once I do.
