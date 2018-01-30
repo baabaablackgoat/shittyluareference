@@ -2,6 +2,25 @@
 Here comes the juicy part. Suppose you only want to run a bit of code if some value is smaller or greater than some other value, and some other code should run if blah is blah blah blah blah. You get the idea.
 
 ## TL;DR
+```lua
+if condition then stuff() elseif morestuff() else ayylmao() end
+
+while condition do foo() end
+
+repeat bar() until condition
+
+for i = start, stop, step do bez() end--stop occurs on greater than check
+
+for stuff in some_table do baa() end
+
+while true do code() break end --aborts the loop
+
+::target:: --for goto
+
+goto target
+```
+
+## The long version
 
 ### If/ElseIf/Else
 The most commonly known one is the **if/elseif/else** statement.
