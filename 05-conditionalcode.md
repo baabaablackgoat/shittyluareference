@@ -39,15 +39,6 @@ Now the `else`. If none of the previous checks have succeded, you can make your 
 
 The keyword `end` closes the if statement, and the second `end` closes the function.
 
-### Footnote: Ternaries
-
-Something you should know: Other languages have something reffered to as **Ternaries.** This is basically a shorthand version of an if-else statement that you want to keep compact. **Lua does not have this.** Yes, you can bodge your own one, but just... don't. It's confusing as hell.
-
-An example Ternary in **JavaScript, NOT Lua**:
-```js
-    return(condition ? true : false);
-```
-
 ### While
 If you want to run some code until some other condition is met, you'll love the while loop.
 
@@ -152,6 +143,6 @@ while true do --hue hue, infinite loop
 end
 ```
 
-### Hacky ternaries
+### Footnote: Hacky ternaries
 
 Because this shitty workaround some page is trying to advertise to me is confusing as fuck, I won't try to explain it just yet. Maybe i'll update this page once I do.
