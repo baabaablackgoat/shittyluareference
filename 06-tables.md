@@ -26,3 +26,12 @@ print(table[3]) --prints out 69
 `<rant>`
 For some goddamn reason that I complained about in 05 already, **Lua uses 1-indexing**. This means that when you have a list of stuff (so usually a table), it starts counting from one. Seems reasonable, right? Well, almost every other language you'll ever learn will start by counting from zero. 
 `</rant>`
+
+With the syntax we just learned, we can also edit values - just like we edit variables. Say we want to change that silly joke about sexual innuendos. Not a problem:
+```lua
+table[3] = 420
+```
+
+And boom, we now have a weed joke in there. Funny and original. /s
+
+### "Objects" - Key/Value pairs
