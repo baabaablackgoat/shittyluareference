@@ -85,7 +85,7 @@ You can always add new values into tables like this:
 sometable = {"hello"}
 table.insert(sometable,2,"world") --inserts the value "world" on position/index 2 into table sometable
 --sometable is now {"hello", "world"}
-sometable["foo"]="bar"
+sometable[foo]="bar"
 --sometable now is {1="hello", 2="world", foo="bar"}
 ```
 
