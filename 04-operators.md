@@ -24,7 +24,7 @@ print("hello" == "hello") --returns true
 print(42 == "42") --returns false - datatypes don't match! No coercion here.
 
 print(69 ~= 420) --returns true - because the values don't match.
-let ayylmao = "ayylmao"
+ayylmao = "ayylmao"
 print(ayylmao ~= "ayylmao") --returns false - the variable content is identical to the compared value!
 ```
 
